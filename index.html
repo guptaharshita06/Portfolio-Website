@@ -31,6 +31,11 @@
 
     <!-- Header -->
     <header class="container header" data-aos="fade-down">
+      <div class="profile-image-outer">
+        <div class="profile-image-inner">
+          <img src="Portfolio image.jpg" alt="Harshita Gupta" />
+        </div>
+      </div>
       <h1>Hi, I'm Harshita Gupta</h1>
       <p><span id="typed"></span></p>
     </header>
@@ -49,21 +54,20 @@
     </section>
 
     <!-- Skills Section -->
-<section id="skills" class="container skills" data-aos="fade-up">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div class="skill"><i class="fab fa-html5"></i> HTML</div>
-    <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
-    <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
-    <div class="skill"><i class="fab fa-react"></i> React.js</div>
-    <div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
-    <div class="skill"><i class="fas fa-code"></i> C</div>
-    <div class="skill"><i class="fas fa-code"></i> C++</div>
-    <div class="skill"><i class="fab fa-python"></i> Python</div>
-    <div class="skill"><i class="fas fa-database"></i> MongoDB</div>
-  </div>
-</section>
-
+    <section id="skills" class="container skills" data-aos="fade-up">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+        <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+        <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="skill"><i class="fab fa-react"></i> React.js</div>
+        <div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
+        <div class="skill"><i class="fas fa-code"></i> C</div>
+        <div class="skill"><i class="fas fa-code"></i> C++</div>
+        <div class="skill"><i class="fab fa-python"></i> Python</div>
+        <div class="skill"><i class="fas fa-database"></i> MongoDB</div>
+      </div>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="container projects" data-aos="fade-up">
@@ -112,9 +116,7 @@
           <h3>Chatbot</h3>
           <p>Responsive chatbot by HTML, CSS and JavaSript.</p>
           <div class="buttons">
-            <a
-              href="https://github.com/guptaharshita06/Chatbot"
-              target="_blank"
+            <a href="https://github.com/guptaharshita06/Chatbot" target="_blank"
               >GitHub</a
             >
             <a href="#" target="_blank">Live Demo</a>
@@ -172,8 +174,6 @@
             <a href="#" target="_blank">Live Demo</a>
           </div>
         </div>
-
-
       </div>
     </section>
 
@@ -219,7 +219,10 @@
 
     <!-- Footer -->
     <footer class="container footer">
-      <p>© 2025 Harshita Gupta | All Rights Reserved</p>
+      <p>© <span id="year"></span> Harshita Gupta | All Rights Reserved</p>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
     </footer>
 
     <script>
@@ -232,3 +235,5 @@
     </script>
   </body>
 </html>
+
+
